@@ -1,0 +1,171 @@
+/* calendar.css */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    color: #343a40;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    color: #343a40;
+  }
+  
+  .table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-title {
+    font-weight: bold;
+  }
+  
+  .event-details {
+    margin-top: 0.5rem;
+  }
+  
+  .event-actions {
+    margin-top: 0.5rem;
+  }
+  
+  .add-event {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #17a2b8;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border-radius: 0.5rem;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    border-bottom: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .modal-title {
+    color: #fff;
+  }
+  
+  .modal-body {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    color: #343a40;
+  }
+  
+  .form-control {
+    background-color: #fff;
+    color: #343a40;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a71d2a;
+  }
+  
+  .day.red {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .day.green {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .day.blue {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .event.red {
+    background-color: #f8d7da;
+  }
+  
+  .event.green {
+    background-color: #d4edda;
+  }
+  
+  .event.blue {
+    background-color: #d1ecf1;
+  }
+  
+  .calendar-container {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
